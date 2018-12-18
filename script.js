@@ -23,7 +23,7 @@ $(document).ready(function() {
   }
 
   function createElement(data) {
-    const element = $(datatableRowTemplate).clone();
+    var element = $(datatableRowTemplate).clone();
 
     element.attr('data-task-id', data.id);
     element.find('[data-task-name-section] [data-task-name-paragraph]').text(data.title);
